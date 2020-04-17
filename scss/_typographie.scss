@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap');
+
+$montserrat-regular: 'Montserrat', sans-serif;
+$roboto-regular: 'Roboto', sans-serif;
+$roboto-light: "Roboto light", sans-serif;
+
+body {
+    font-family: $roboto-regular;
+}

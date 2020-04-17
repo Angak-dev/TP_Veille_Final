@@ -1,0 +1,33 @@
+.site-header {
+  @extend %displayFlexRowCenter;
+  justify-content: space-between;
+  font-family: $montserrat-regular;
+
+  height: 100%;
+
+  margin: 0 2%;
+}
+
+.site-branding {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+
+  .custom-logo-link {
+    img {
+      max-width: 100px;
+      max-height: 40px;
+    }
+  }
+  .site-title {
+    margin: 0;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $blue;
+
+      font-size: 3em;
+      font-weight:bold;
+    }
+  }
+}
