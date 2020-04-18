@@ -165,6 +165,7 @@ body {
 
 @media screen and (max-width: 600px) {
   
+  // Section des événements en mobile
   .site-content {
     display: flex;
 
@@ -192,6 +193,17 @@ body {
           justify-content: center;
           align-items: center;
       }
+    }
+  }
+
+  // Section des nouvelles en mobile
+  .categorie-nouvelles {
+
+    h1 {
+      margin-top: 30px;
+      font-family: $poppins-regular;
+      font-weight: 700;
+      font-size: 1.8rem;
     }
   }
 
