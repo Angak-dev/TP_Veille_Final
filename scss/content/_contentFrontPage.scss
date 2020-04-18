@@ -9,9 +9,23 @@ body {
 .background_anim {
   height: 200px;
   width: 100%;
+  margin-top: 50px;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
+
+  .section_anim_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+      border-radius: 25px;
+    }
+  }
 }
 
 @keyframes gradient {
@@ -86,6 +100,12 @@ body {
 
 .site-content {
   @extend %displayFlexColumnCenter;
+  margin-top: 30px;
+  
+  h1 {
+    font-family: $poppins-regular;
+    font-weight: 700;
+  }
 
   .figure-post-thumbnail {
     width: 100vw;
@@ -94,6 +114,10 @@ body {
     overflow: hidden;
 
     margin: 0;
+
+    a {
+      font-size: 0.8em;
+    }
 
     .post-thumbnail {
       position: relative;
@@ -114,6 +138,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
+
+  h1 {
+    font-family: $poppins-regular;
+    font-weight: 700;
+  }
 
   
   .categorie-nouvelles-contenu {
@@ -138,8 +168,6 @@ body {
         width: 90%;
         text-align: center;
         a {
-          color: $black;
-          text-transform: uppercase;
           font-size: 0.8em;
 
           @include transition(color 0.4s);

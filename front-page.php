@@ -81,16 +81,10 @@ echo '</div>';
 
 <?php 
     echo '
-        <section class="section_anim_box">
-            <div class="box"></div>
-        </section>
-    ';
-?>
-
-<?php 
-    echo '
         <section class="background_anim">
-            
+            <section class="section_anim_box">
+                <div class="box"></div>
+            </section>
         </section>
     ';
 ?>

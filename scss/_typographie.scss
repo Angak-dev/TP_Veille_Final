@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
 
 $montserrat-regular: 'Montserrat', sans-serif;
 $roboto-regular: 'Roboto', sans-serif;
 $roboto-light: "Roboto light", sans-serif;
+$poppins-regular: "Poppins", sans-serif;
 
 body {
-    font-family: $roboto-regular !important;
+    font-family: $poppins-regular !important;
 }

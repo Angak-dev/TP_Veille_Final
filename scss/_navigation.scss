@@ -1,7 +1,7 @@
 .mobile-menu {
   display: block;
   width: 100%;
-  background: #8aa8bd;
+  background: $black;
   line-height: 1.6em;
   font-weight: 400;
   width: 100%;
@@ -16,10 +16,10 @@
       display: block;
       min-width: 140px;
       text-align: center;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: $poppins-regular;
       color: #fff;
       text-transform: uppercase;
-      background: #8aa8bd;
+      background: $black;
       text-decoration: none;
       margin-left: -5px;
       padding: 10px 0;
