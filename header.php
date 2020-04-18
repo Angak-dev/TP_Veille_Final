@@ -44,10 +44,10 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation mobile-menu">
 
-			<label id="show_menu" for="chk_menu">&#9776;</label>
-			<input type="checkbox" id="chk_menu"> 
+			<label id="show-menu" for="show-menu"><span></span><div class="lines"></div></label>
+			<input type="checkbox" id="show-menu"> 
 			
 			<?php
 			wp_nav_menu( array(

@@ -68,7 +68,8 @@ body {
           justify-content: space-between;
   font-family: "Montserrat", sans-serif;
   height: 100%;
-  margin: 0;
+  width: 100%;
+  background-color: #151515;
 }
 
 .site-branding {
@@ -85,173 +86,107 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: solid black 2px;
-  width: 50%;
 }
 
 .site-branding .site-title {
   margin: 0;
+  padding: 15px;
 }
 
 .site-branding .site-title a {
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
-  #chk_menu:checked ~ #primary-menu > ul {
-    height: 150px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    visibility: hidden;
-  }
-  #chk_menu:checked ~ #bouton_menu {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  #chk_menu {
-    visibility: visible;
-  }
-  #bouton_menu {
-    visibility: visible;
-    color: #fff;
-    font-size: 2em;
-  }
-  #bouton_menu {
-    -webkit-transform-origin: 35% 35%;
-            transform-origin: 35% 35%;
-    width: 50px;
-    height: 50px;
-  }
-  nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-  }
-  nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    list-style-type: none;
-    visibility: hidden;
-    height: 30px;
-  }
-  nav ul li {
-    color: red;
-  }
-  nav ul li a {
-    text-decoration: none;
-    display: block;
-    padding: 3px;
-  }
-  nav ul li a:hover {
-    background-color: #ff6666;
-  }
-}
-
-#masthead {
+.mobile-menu {
+  display: block;
   width: 100%;
-  height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-navigation {
+  background: #8aa8bd;
+  line-height: 1.6em;
+  font-weight: 400;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
 }
 
-.main-navigation #bouton_menu {
-  display: none;
+.mobile-menu li {
+  display: inline-block;
 }
 
-.main-navigation #chk_menu {
-  display: none;
-}
-
-.main-navigation #chk_menu:checked ~ #primary-menu > ul {
-  height: 30px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  visibility: visible;
-}
-
-.main-navigation #primary-menu {
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*border: solid black 2px;*/
-  /*font-size: 15%;*/
-  margin: 0;
-  padding: 0;
-}
-
-.main-navigation #primary-menu ul {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  visibility: visible;
-  height: 30;
-}
-
-.main-navigation #primary-menu ul li {
-  margin: 0 5%;
-  list-style: none;
-  display: inline;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.main-navigation #primary-menu ul li a {
-  color: #111;
-  text-decoration: none;
+.mobile-menu li a {
+  display: block;
+  min-width: 140px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
   text-transform: uppercase;
-  -webkit-transition: color 0.4s;
-  transition: color 0.4s;
+  background: #8aa8bd;
+  text-decoration: none;
+  margin-left: -5px;
+  padding: 10px 0;
 }
 
-.main-navigation #primary-menu ul li a:hover {
-  color: #0978C0;
+.mobile-menu li ul {
+  display: none;
+}
+
+.mobile-menu li ul li {
+  display: block;
+  float: none;
+}
+
+.mobile-menu li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+.mobile-menu .show-menu {
+  text-decoration: none;
+  color: #fff;
+  background: #8aa8bd;
+  text-align: center;
+  padding: 10px 15px;
+  display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span {
+  padding-left: 25px;
+}
+
+.mobile-menu input[type=checkbox] {
+  display: none;
+}
+
+.mobile-menu input[type=checkbox]:checked ~ #menu {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8;
+    border-top: 5px solid #f8f8f8;
+    content: "";
+    height: 5px;
+    width: 20px;
+    padding-right: 15px;
+    position: relative;
+  }
+  .mobile-menu ul {
+    position: absolute;
+    display: none;
+  }
+  .mobile-menu ul li, .mobile-menu li a {
+    width: 100%;
+  }
+  .mobile-menu .show-menu {
+    display: block;
+  }
 }
 
 * {
@@ -268,7 +203,7 @@ body {
 /*********************************/
 .container-evenements {
   width: 90vw;
-  border: 2px solid #111;
+  border: 2px solid #151515;
   /*display: grid;
   grid-template-columns: repeat(3, 30vw);*/
   margin: 2%;
@@ -460,15 +395,25 @@ body {
   height: 100%;
 }
 
-.site-content .categorie-nouvelles {
+.categorie-nouvelles {
   width: 100%;
   height: auto;
-  margin: 2% 0;
-  background-color: black;
-  /*display: flex;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.site-content .categorie-nouvelles .categorie-nouvelles-contenu {
+.categorie-nouvelles .categorie-nouvelles-contenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,29 +429,42 @@ body {
           align-items: center;
 }
 
-.site-content .categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles {
+.categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles {
   margin: 1%;
   width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.site-content .categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .image-article {
+.categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .image-article {
   width: 90%;
 }
 
-.site-content .categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .title-article {
+.categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .title-article {
   width: 90%;
   text-align: center;
 }
 
-.site-content .categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .title-article a {
-  color: white;
+.categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .title-article a {
+  color: #151515;
   text-transform: uppercase;
   font-size: 0.8em;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
 
-.site-content .categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .title-article a:hover {
+.categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .title-article a:hover {
   color: #39acf6;
 }
 
@@ -532,7 +490,7 @@ footer .site-info {
 footer .site-info a {
   height: 1%;
   margin-right: 0.5%;
-  color: #111;
+  color: #151515;
   text-transform: uppercase;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
