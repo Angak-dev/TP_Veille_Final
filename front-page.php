@@ -6,7 +6,7 @@ $args2 = array (
     'orderby' => 'date'
 );
 
-//Query des articles de la catégorie : Nouvelles
+//Query des articles de la catégorie : evenements
 $queryEvenement = new WP_Query( $args2 );
 
 
@@ -23,7 +23,6 @@ $queryNouvelles = new WP_Query( $args );
 get_header();
 
 ?>
-/////////////////////////// front-page
 <!-- Figure qui controle la cadre de l'image de mise en avant -->
 
     <?php
@@ -57,9 +56,6 @@ echo '</div>';
 echo '</div>';
 ?>
 
-
-
-
 <?php
 // Appel du Query : Nouvelles
 echo '<div class="categorie-nouvelles">';
@@ -87,6 +83,14 @@ echo '</div>';
     echo '
         <section class="section_anim_box">
             <div class="box"></div>
+        </section>
+    ';
+?>
+
+<?php 
+    echo '
+        <section class="background_anim">
+            
         </section>
     ';
 ?>

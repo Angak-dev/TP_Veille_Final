@@ -3,9 +3,9 @@
 Theme Name: Exerice 9 - Child
 Theme URI: 127.0.0.1/tp2-veille
 Description: Child theme of Exercice 9 - Programmation et Veille Technologique
-Author: 
+Author: Mathieu Bourassa / Luka Ross
 Author URI: 
-Template: Astral
+Template: tp2-veille
 Version: 1.0
 Text Domain: exercice-9-child
 */
@@ -21,6 +21,11 @@ Text Domain: exercice-9-child
 /** Gutenberg Classes **/
 /** Footer **/
 /*********************************/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap");
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
 .container-evenements .articles-evenements .content-post, .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,23 +66,27 @@ Text Domain: exercice-9-child
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
-  margin: 0 2%;
+  margin: 0;
 }
 
 .site-branding {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid black 2px;
   width: 50%;
-}
-
-.site-branding .custom-logo-link img {
-  max-width: 100px;
-  max-height: 40px;
 }
 
 .site-branding .site-title {
@@ -87,8 +96,7 @@ Text Domain: exercice-9-child
 .site-branding .site-title a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #0978C0;
-  font-size: 3em;
+  color: black;
   font-weight: bold;
 }
 
@@ -296,10 +304,20 @@ body {
 
 /* Ceci est notre animation elle rend le background coloré et joli */
 body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.background_anim {
+  height: 200px;
+  width: 100%;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
 }
 
 @-webkit-keyframes gradient {
@@ -443,10 +461,11 @@ body {
 }
 
 .site-content .categorie-nouvelles {
-  /*@extend %displayFlexColumnCenter;*/
   width: 100%;
   height: auto;
   margin: 2% 0;
+  background-color: black;
+  /*display: flex;*/
 }
 
 .site-content .categorie-nouvelles .categorie-nouvelles-contenu {
@@ -480,7 +499,7 @@ body {
 }
 
 .site-content .categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .title-article a {
-  color: #0978C0;
+  color: white;
   text-transform: uppercase;
   font-size: 0.8em;
   -webkit-transition: color 0.4s;

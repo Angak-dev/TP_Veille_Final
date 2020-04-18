@@ -1,8 +1,17 @@
 /* Ceci est notre animation elle rend le background coloré et joli */
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background_anim {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
 }
 
 @keyframes gradient {
@@ -16,6 +25,7 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
 
 .section_anim_box {
   overflow: hidden;
@@ -97,10 +107,12 @@ body {
   }
 
   .categorie-nouvelles {
-    /*@extend %displayFlexColumnCenter;*/
     width: 100%;
     height: auto;
     margin: 2% 0;
+    background-color: black;
+    /*display: flex;*/
+
     
     .categorie-nouvelles-contenu {
       display: flex;
@@ -120,7 +132,7 @@ body {
           width: 90%;
           text-align: center;
           a {
-            color: $blue;
+            color: white;
             text-transform: uppercase;
             font-size: 0.8em;
 

@@ -5,5 +5,5 @@ $roboto-regular: 'Roboto', sans-serif;
 $roboto-light: "Roboto light", sans-serif;
 
 body {
-    font-family: $roboto-regular;
+    font-family: $roboto-regular !important;
 }
