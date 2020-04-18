@@ -25,10 +25,15 @@ get_header();
 ?>
 <!-- Figure qui controle la cadre de l'image de mise en avant -->
 
-    <?php
-        //Appel de la fonction qui affiche l'image de mise en avant
-        the_post_thumbnail('full'); 
-    ?>
+   
+        <!--Appel de la fonction qui affiche l'image de mise en avant-->
+        <div class='cropped'>
+            <?php
+                the_post_thumbnail('full'); 
+            ?>
+        </div>
+       
+    
 
 
 <?php

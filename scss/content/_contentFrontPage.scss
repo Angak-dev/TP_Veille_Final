@@ -53,17 +53,6 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-  
-  .section_evenement {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-}
-
 .box {
   width: 100px;
   height: 100px;
@@ -100,19 +89,62 @@ body {
 
 .site-content {
   @extend %displayFlexColumnCenter;
-  margin-top: 30px;
-  
+  margin-top: 40px;
+  display: flex;
+
+  .cropped {
+    overflow: hidden;
+    border: solid 2px black;
+    background-size: cover;
+
+    img {
+      height: 200px;
+    }
+  }
+
   h1 {
+    margin-top: 30px;
     font-family: $poppins-regular;
     font-weight: 700;
+  }
+
+  .section_evenement {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .articles-evenements {
+      margin: 1%;
+      width: 20vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .title-article {
+    width: 90%;
+    text-align: center;
+    a {
+      font-size: 0.8em;
+
+      @include transition(color 0.4s);
+
+      &:hover {
+        color: lighten($blue, 20%);
+      }
+    }
   }
 
   .figure-post-thumbnail {
     width: 100vw;
     height: 50vh;
-
     overflow: hidden;
-
     margin: 0;
 
     a {
@@ -128,6 +160,19 @@ body {
         height: 100%;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  .section_evenement {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -147,9 +192,11 @@ body {
 
   
   .categorie-nouvelles-contenu {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     .articles-nouvelles {

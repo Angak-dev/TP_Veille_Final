@@ -7,7 +7,7 @@
 - Elle sera triée selon la date des conférences
 - En ordre ascendant
  */
-function extraire_evenements( $query ) {
+/*function extraire_evenements( $query ) {
     if (! is_front_page() && $query->is_category('evenement'))
     {
        $query->set( 'posts_per_page', -1 );
@@ -15,17 +15,17 @@ function extraire_evenements( $query ) {
        $query->set( 'order', 'asc' );
     }
  }
- add_action( 'pre_get_posts', 'extraire_evenements' );
-
-?>
+ add_action( 'pre_get_posts', 'extraire_evenements' );*/
 
 
 
-<?php
+
+
+
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
  
-    $parent_style = 'parent-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
+    $parent_style = 'parent-style'; 
  
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style',
@@ -65,3 +65,4 @@ function extraire_atelier( $query ) {
    }
 }
 add_action( 'pre_get_posts', 'extraire_atelier' );
+
