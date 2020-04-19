@@ -414,6 +414,8 @@ body {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .site-content .section_evenement {
