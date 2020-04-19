@@ -457,7 +457,9 @@ body {
 }
 
 .site-content .articles-evenements #ReadMoreBtn {
+  width: 50%;
   margin-top: 25px;
+  border-radius: 10px;
 }
 
 .site-content .title-article {
