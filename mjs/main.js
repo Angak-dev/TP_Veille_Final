@@ -5,7 +5,7 @@ let PostContainer = document.getElementById("PostContainer");
 if (LirePlusBtn) {
     LirePlusBtn.addEventListener("click", function() {
         let maRequete = new XMLHttpRequest();
-        maRequete.open('GET', 'http://localhost/wordpress_tp2/wp-json/wp/v2/posts?categories=3&order=asc');
+        maRequete.open('GET', 'http://localhost/wordpress_tp2/wp-json/wp/v2/posts?categories=2&order=asc');
         maRequete.onload = function() {
             if (maRequete.status >= 200 && maRequete.status < 400) {
                 let data = JSON.parse(maRequete.responseText);

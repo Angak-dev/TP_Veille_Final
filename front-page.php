@@ -48,8 +48,6 @@ while ( $queryEvenement->have_posts() ) {
         <h3 class="title-article"><a href='.get_the_permalink().'>'.substr(get_the_title(),0,18).'</a></h3>';
         the_post_thumbnail('thumbnail');
         echo'
-        <button id="ReadMoreBtn">En savoir plus</button>
-        <div id="PostContainer"></div>
     </article>
     ';
 }
