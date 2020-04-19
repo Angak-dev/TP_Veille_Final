@@ -686,17 +686,10 @@ footer .site-info {
   margin: 0 2%;
 }
 
-footer .site-info a {
-  height: 1%;
-  margin-right: 0.5%;
-  color: #151515;
-  text-transform: uppercase;
-  -webkit-transition: color 0.4s;
-  transition: color 0.4s;
-}
-
-footer .site-info a:hover {
-  color: #0978C0;
+footer .site-info p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 .container-evenements {

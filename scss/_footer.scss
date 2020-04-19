@@ -10,21 +10,12 @@ footer {
     display: inline-flex;
     align-items: center;
     width: 75%;
-
     margin: 0 2%;
 
-    a {
-      height: 1%;
-      margin-right: 0.5%;
-
-      color: $black;
-      text-transform: uppercase;
-
-      @include transition(color 0.4s);
-
-      &:hover {
-        color: $blue;
-      }
+    p {
+      font-family: $poppins-regular;
+      font-size: 1.5em;
+      font-weight: 700;
     }
   }
 }
