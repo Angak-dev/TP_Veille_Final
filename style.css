@@ -462,6 +462,11 @@ body {
   border-radius: 10px;
 }
 
+.site-content .articles-evenements #ReadMoreBtn:hover {
+  background-color: #151515;
+  color: white;
+}
+
 .site-content .title-article {
   width: 90%;
   text-align: center;
