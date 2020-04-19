@@ -57,6 +57,17 @@ function extraire_cours( $query ) {
 }
 add_action( 'pre_get_posts', 'extraire_cours' );
 
+///////////////////////////////////////////////////////// catégorie  evenements
+function extraire_evenement( $query ) {
+   if (!is_home() && $query->is_category('evenement'))
+   {
+      $query->set( 'posts_per_page', -1 );
+      $query->set( 'orderby', 'date' );
+      $query->set( 'order', 'asc' );
+   }
+}
+add_action( 'pre_get_posts', 'extraire_evenement' );
+
 ///////////////////////////////////////////////////////// catégorie  atelier
 function extraire_atelier( $query ) {
    if ($query->is_category('atelier'))

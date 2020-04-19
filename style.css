@@ -5,7 +5,7 @@ Theme URI: 127.0.0.1/tp2-veille
 Description: Child theme of Exercice 9 - Programmation et Veille Technologique
 Author: Mathieu Bourassa / Luka Ross
 Author URI: 
-Template: tp2-veille
+Template: Astral
 Version: 1.0
 Text Domain: exercice-9-child
 */
@@ -542,6 +542,8 @@ body {
 
 .categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .image-article {
   width: 90%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .categorie-nouvelles .categorie-nouvelles-contenu .articles-nouvelles .title-article {
@@ -683,6 +685,23 @@ footer .site-info a {
 
 footer .site-info a:hover {
   color: #0978C0;
+}
+
+.container-evenements {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[31];
+      grid-template-rows: repeat(31, 1fr);
+}
+
+.container-evenements div {
+  border: 1px solid #aaa;
+}
+
+.container-evenements div h2 {
+  font-size: .8em;
 }
 
 .block_guttenberg {

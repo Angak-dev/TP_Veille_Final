@@ -16,10 +16,10 @@ get_header();
                 $jourGrid = get_the_date('j') + 1;
                 $moisGrid = convertMoisEnColone($mois);
 
-                if(($mois==1)||($mois==2)||($mois==12)){
+                if(($mois==1)||($mois==2)||($mois==3)){
 
             
-                $gridArea = ''.$jour.'/'.$moisGrid.'/'.$jourGrid.'/'.$moisGrid.'';
+                $gridArea = ''.$jour.'/'.$moisGrid;
 
 
 
@@ -43,13 +43,13 @@ get_header();
 
     function convertMoisEnColone($value){
         switch ($value) {
-            case 9:
+            case 1:
                 return 1;
                 break;
-            case 10:
+            case 2:
                 return 2;
                 break;
-            case 11:
+            case 3:
                 return 3;
                 break;
             default: 

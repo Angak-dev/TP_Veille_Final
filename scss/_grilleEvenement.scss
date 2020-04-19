@@ -1,0 +1,11 @@
+.container-evenements {
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(31,1fr);
+    div {
+        border : 1px solid #aaa;
+        h2 {
+            font-size: .8em;
+        }
+    }
+}

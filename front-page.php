@@ -33,9 +33,6 @@ get_header();
             ?>
         </div>
        
-    
-
-
 <?php
 // Appel du Query : Evenement
 echo '
