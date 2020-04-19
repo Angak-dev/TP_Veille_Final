@@ -110,6 +110,12 @@ body {
     text-decoration: underline;
   }
 
+  .text-bienvenue {
+    text-transform: uppercase;
+    font-family: $poppins-regular;
+    font-weight: 700;
+  }
+
   .section_evenement {
     padding: 0;
     width: 100%;

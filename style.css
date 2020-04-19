@@ -410,6 +410,12 @@ body {
   text-decoration: underline;
 }
 
+.site-content .text-bienvenue {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
 .site-content .section_evenement {
   padding: 0;
   width: 100%;

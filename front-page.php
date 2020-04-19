@@ -25,7 +25,7 @@ get_header();
 ?>
 <!-- Figure qui controle la cadre de l'image de mise en avant -->
 
-   
+        <h4 class="text-bienvenue">Bienvenue sur le site de notre TP2</h4>
         <!--Appel de la fonction qui affiche l'image de mise en avant-->
         <div class='cropped'>
             <?php
